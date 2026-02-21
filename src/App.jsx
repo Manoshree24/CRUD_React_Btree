@@ -10,7 +10,7 @@ function App() {
     return savedData ? JSON.parse(savedData) : [];
   });
 
-  // 2. Automatically save to LocalStorage whenever 'users' state changes
+
   useEffect(() => {
     localStorage.setItem('crud_users', JSON.stringify(users));
   }, [users]);
